@@ -1,0 +1,38 @@
+h1{
+    background-color: deepskyblue;
+    color: yellow;
+    font-size: 30px !important;
+}
+
+h1:hover{
+    background-color: yellow;
+    color: deepskyblue;
+    font-size: 30px !important;
+}
+
+button{
+    background-color: deepskyblue;
+    color: yellow;
+    font-size: 15 !important;
+    
+}
+
+button:hover{
+    color:deepskyblue !important; 
+    background-color:yellow !important;
+}
+
+@keyframes rainbow{
+    from{box-shadow: 1px 1px 15px red;}
+    20%{box-shadow: 1px 1px 15px yellow;}
+    40%{box-shadow: 1px 1px 15px lime;}
+    60%{box-shadow: 1px 1px 15px cyan;}
+    80%{box-shadow: 1px 1px 15px magenta;}
+    to{box-shadow: 1px 1px 15px red;}
+}
+
+canvas{
+    animation-name: rainbow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
