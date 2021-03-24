@@ -5,8 +5,8 @@ h1{
 }
 
 h1:hover{
-    background-color: yellow;
-    color: deepskyblue;
+    background-color: yellow !important;
+    color: deepskyblue !important;
     font-size: 30px !important;
 }
 
@@ -24,10 +24,11 @@ button:hover{
 
 @keyframes rainbow{
     from{box-shadow: 1px 1px 15px red;}
-    20%{box-shadow: 1px 1px 15px yellow;}
-    40%{box-shadow: 1px 1px 15px lime;}
-    60%{box-shadow: 1px 1px 15px cyan;}
-    80%{box-shadow: 1px 1px 15px magenta;}
+    16%{box-shadow: 1px 1px 15px yellow;}
+    33%{box-shadow: 1px 1px 15px lime;}
+    50%{box-shadow: 1px 1px 15px cyan;}
+    66%{box-shadow: 1px 1px 15px purple;}
+    83%{box-shadow: 1px 1px 15px magenta;}
     to{box-shadow: 1px 1px 15px red;}
 }
 
