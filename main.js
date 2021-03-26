@@ -1,5 +1,8 @@
-function preload(){
+var xCord = "0";
+var yCord = "0";
 
+function preload(){
+    picture = loadImage("https://i.postimg.cc/tgTS2RFg/clownnose.png");
 }
 
 function setup(){
@@ -18,17 +21,21 @@ function setup(){
         if(results.length > 0){
             console.log(results);
 
-            var xCord = results[0].pose.nose.x;
-            var yCord = results[0].pose.nose.y;
+            xCord = results[0].pose.nose.x;
+            yCord = results[0].pose.nose.y;
 
             console.log("Nose X = " + xCord);
-            console.log("Nose Y = " + yCord)
+            console.log("Nose Y = " + yCord);
         }
     });
 }
 
 function draw(){
     image(video,0,0,400,300);
+
+    fill(255,0,0);
+    stroke(255,0,0);
+    image(picture,xCord - 17,yCord - 15,35,35);
 }
 
 function takeSnapshot(){
